@@ -1,10 +1,15 @@
-body{
-    background-color:  black;
-    color: white;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  background-color: black;
+  color: white;
+}
 
-.titulo{
+.titulo {
   font-family: "Pacifico", cursive;
   font-size: 2rem;
   font-weight: 100;
@@ -12,12 +17,40 @@ body{
   text-align: center;
 }
 
-
-p{
+/*p{
     background-color: rgb(95, 96, 93);
     text-align: center;
+}*/
+
+.btn-box {
+  text-align: center;
 }
 
-.btn-box{
-    text-align: center;
+button {
+  text-align: center;
+  padding: 20px 40px;
+  border-radius: 25px 0 0 25px;
+}
+
+#portada {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#portada img {
+  border: 20px dashed blue;
+  padding: 80px;
+  background-color: slateblue;
+  width: 200px;
+}
+
+.user-card {
+  width: 300px;
+  background-color: gray;
+  text-align: center;
+  border-radius: 10px;
+  padding: 30px;
+}
+.user-card-info img {
+  border-radius: 50%;
 }
