@@ -1,0 +1,23 @@
+body{
+    background-color:  black;
+    color: white;
+}
+
+
+.titulo{
+  font-family: "Pacifico", cursive;
+  font-size: 2rem;
+  font-weight: 100;
+  font-style: normal;
+  text-align: center;
+}
+
+
+p{
+    background-color: rgb(95, 96, 93);
+    text-align: center;
+}
+
+.btn-box{
+    text-align: center;
+}
