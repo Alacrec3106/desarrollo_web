@@ -1,0 +1,65 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+
+h1{
+    font-family: "Alfa Slab One", serif;
+    font-weight: bold;
+}
+
+#miParrafo{
+    color: blue;
+      font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+}
+
+.p{
+    color: green;
+    font-family: "Ultra", sans-serif;
+    font-weight: 400;
+}
+
+p{
+    color: red !important;
+
+}
+
+/* EJMPLO POSICIÓN */
+.parent{
+    background-color: rgb(113, 243, 148);
+    width: 400px;
+    height: 300px;
+    border: 5px solid white;
+    border-radius: 15px;
+    position: sticky; 
+    top: 20%;
+}
+
+.parent h1{
+    position: absolute; 
+    font-size: 4.5rem;   
+    left: 20%;
+    bottom: 20%;
+    z-index: 2;
+}
+
+.parent img{
+    position: absolute;
+}
+
+.naranja{
+    right: -15%;
+    top: 5%; 
+    width: 200px;
+    z-index: 1;
+     transform: rotate(32deg);
+}
+
+.hoja{
+    bottom: 15%; 
+    left: -8%; 
+    z-index: 3;
+    transform: rotate(-32deg);
+}
