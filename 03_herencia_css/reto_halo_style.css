@@ -1,0 +1,95 @@
+/* Usamos una fuente gratuita y genérica como pidió la regla */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #222; /* Fondo oscuro para que resalte la tarjeta */
+    padding: 50px;
+}
+
+/* Contenedor principal de la tarjeta */
+.halo-card {
+    width: 320px;
+    height: 380px;
+    position: relative; /* Clave para poder usar position: absolute adentro */
+    border-radius: 20px;
+    overflow: hidden; /* Corta lo que se salga de los bordes redondeados */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    background-color: #111;
+}
+
+/* Imagen de fondo ocupando toda la tarjeta */
+.card-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Nivel de profundidad más bajo */
+}
+
+/* El recuadro superpuesto tipo vidrio/gradiente */
+.card-content {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, #4b6b50e6, #1c2b20e6); /* Colores tipo armadura Spartan con un poco de transparencia */
+    border-radius: 15px;
+    padding: 20px;
+    padding-top: 35px; /* Espacio extra arriba para el logo */
+    color: white;
+    z-index: 2; /* Se coloca por encima de la imagen de fondo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* El logo cuadrado que resalta */
+.card-logo {
+    position: absolute;
+    top: -20px; /* Lo subimos para que muerda el borde superior del contenedor */
+    left: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: #e5e5e5;
+    border-radius: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+/* Estilos de texto */
+.description {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0 0 25px 0;
+    color: #e0e0e0;
+}
+
+/* Contenedor del pie de página (Fecha y botón) */
+.card-footer {
+    width: 100%;
+    /* Truco para limpiar los floats (clearfix casero) */
+    overflow: hidden; 
+}
+
+/* Como no hay flexbox, usamos float para alinear a los lados */
+.date {
+    float: left;
+    font-size: 12px;
+    color: #a0a0a0;
+    margin-top: 2px;
+}
+
+.learn-more {
+    float: right;
+    color: #8acc99; /* Un verde más brillante para el enlace */
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: 1px solid #8acc99;
+    padding-bottom: 2px;
+}
+
+.learn-more:hover {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
