@@ -1,51 +1,46 @@
-/* Usamos una fuente gratuita y genérica como pidió la regla */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #222; /* Fondo oscuro para que resalte la tarjeta */
+    background-color: #222;
     padding: 50px;
 }
 
-/* Contenedor principal de la tarjeta */
 .halo-card {
     width: 320px;
     height: 380px;
-    position: relative; /* Clave para poder usar position: absolute adentro */
+    position: relative;
     border-radius: 20px;
-    overflow: hidden; /* Corta lo que se salga de los bordes redondeados */
+    overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     background-color: #111;
 }
 
-/* Imagen de fondo ocupando toda la tarjeta */
 .card-background {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que la imagen no se deforme */
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1; /* Nivel de profundidad más bajo */
+    z-index: 1;
 }
 
-/* El recuadro superpuesto tipo vidrio/gradiente */
 .card-content {
     position: absolute;
     bottom: 15px;
     left: 15px;
     right: 15px;
-    background: linear-gradient(135deg, #4b6b50e6, #1c2b20e6); /* Colores tipo armadura Spartan con un poco de transparencia */
+    background: linear-gradient(135deg, #4b6b50e6, #1c2b20e6);
     border-radius: 15px;
     padding: 20px;
-    padding-top: 35px; /* Espacio extra arriba para el logo */
+    padding-top: 35px;
     color: white;
-    z-index: 2; /* Se coloca por encima de la imagen de fondo */
+    z-index: 2;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* El logo cuadrado que resalta */
 .card-logo {
     position: absolute;
-    top: -20px; /* Lo subimos para que muerda el borde superior del contenedor */
+    top: -20px;
     left: 20px;
     width: 45px;
     height: 45px;
@@ -56,7 +51,6 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 
-/* Estilos de texto */
 .description {
     font-size: 13px;
     line-height: 1.5;
@@ -64,14 +58,11 @@ body {
     color: #e0e0e0;
 }
 
-/* Contenedor del pie de página (Fecha y botón) */
 .card-footer {
     width: 100%;
-    /* Truco para limpiar los floats (clearfix casero) */
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-/* Como no hay flexbox, usamos float para alinear a los lados */
 .date {
     float: left;
     font-size: 12px;
@@ -81,7 +72,7 @@ body {
 
 .learn-more {
     float: right;
-    color: #8acc99; /* Un verde más brillante para el enlace */
+    color: #8acc99;
     text-decoration: none;
     font-size: 13px;
     font-weight: bold;
