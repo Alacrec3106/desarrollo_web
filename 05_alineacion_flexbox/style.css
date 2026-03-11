@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: #ffffff;
+  font-size: 0.9rem;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  border-bottom: 1px solid #ddd;
+  margin: 0 auto;
+}
+
+.box-start {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#logo {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav ul li a:hover {
+  color: green;
+}
+
+.box-end {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.store-link {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.store-link:hover {
+  color: green;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn_inicio,
+.btn_unete {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn_inicio {
+  border: 1px solid black;
+  color: black;
+  background-color: white;
+}
+
+.btn_inicio:hover {
+  background-color: #f2f2f2;
+}
+
+.btn_unete {
+  background-color: black;
+  color: white;
+}
+
+.btn_unete:hover {
+  background-color: #333;
+}
+
+main {
+  display: flex;
+}
+
+.main_start {
+  width: 30%;
+  height: 500px;
+  background-color: rgb(0, 91, 49);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  padding: 20px;
+}
+
+.main_end {
+  flex-grow: 1;
+  background-color: rgb(45, 209, 45);
+  height: 500px;
+}
+
+.products{
+    display: flex;
+    border: 1px solid black;
+}
