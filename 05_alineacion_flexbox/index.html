@@ -5,58 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Alineación</title>
+    <title>Rewards Coffee</title>
   </head>
   <body>
-    <header>
+    <header class="topbar">
       <div class="box-start">
-        <span id="logo">🎅</span>
+        <div class="brand">
+          <span id="logo">☕</span>
+          <span class="brand-name">Coffee</span>
+        </div>
 
         <nav>
           <ul>
-            <li><a href="#">MENÚ</a></li>
-            <li><a href="#">REWARDS</a></li>
+            <li><a href="#menu">MENÚ</a></li>
+            <li><a href="#rewards" class="active">REWARDS</a></li>
           </ul>
         </nav>
       </div>
 
       <div class="box-end">
-        <a href="#" class="store-link"><span>🚩</span> Ubica tu tienda</a>
-
-        <div class="auth-buttons">
-          <a href="#" class="btn_inicio">Iniciar sesión</a>
-          <a href="#" class="btn_unete">Únete</a>
-        </div>
-      </div>
-    </header>
-
-    <main>
-      <div class="main_start">
-        <h1>STARBUCKS <br> REWARDS</h1>
-        <p>Holaaaa, café gratis</p>
+        <a href="#" class="store-link"><span>📍</span> Localiza tu tienda</a>
 
         <div class="auth-buttons">
           <a href="#" class="btn_inicio">Inicia sesión</a>
           <a href="#" class="btn_unete">Únete ahora</a>
         </div>
       </div>
+    </header>
 
-      <div class="main_end">
-        <section class="products">
-          <div class="card">
-            <img src="..." alt="">
-            <p>Pieza de panadería de bienvenida</p>
+    <main class="hero-layout" id="rewards">
+      <section class="main_start">
+        <div class="hero-content">
+          <p class="eyebrow">Programa de recompensas</p>
+          <h1>COFFEE <br />REWARDS</h1>
+          <p class="hero-text">Holaaaa, café gratis</p>
+
+          <div class="auth-buttons hero-buttons">
+            <a href="#" class="btn_inicio">Inicia sesión</a>
+            <a href="#" class="btn_unete">Únete ahora</a>
           </div>
+        </div>
+
+        <div class="phone-visual">
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="mini-card"></div>
+              <div class="mini-stars">★ ★ ★</div>
+              <div class="mini-bar"></div>
+              <div class="mini-bar short"></div>
+            </div>
+          </div>
+          <div class="spark spark-1">★</div>
+          <div class="spark spark-2">★</div>
+          <div class="spark spark-3">★</div>
+        </div>
+      </section>
+
+      <section class="main_end">
+        <section class="products">
+          <article class="reward-card">
+            <div class="reward-icon">🧁</div>
+            <p>Pieza de panadería de bienvenida al nivel Gold</p>
+          </article>
+
+          <article class="reward-card">
+            <div class="reward-icon">💳</div>
+            <p>Tarjeta Gold digital</p>
+          </article>
+
+          <article class="reward-card">
+            <div class="reward-icon">🥐</div>
+            <p>Bebida o panadería de regalo por cada 100 estrellas</p>
+          </article>
+
+          <article class="reward-card">
+            <div class="reward-icon">🎁</div>
+            <p>Promociones y sorpresas exclusivas</p>
+          </article>
+
+          <article class="reward-card">
+            <div class="reward-icon">🥤</div>
+            <p>Rellena tu vaso de café del día</p>
+          </article>
+
+          <article class="reward-card">
+            <div class="reward-icon">📱</div>
+            <p>Ofertas exclusivas y personalizadas para ti</p>
+          </article>
+
+          <article class="reward-card">
+            <div class="reward-icon">🎂</div>
+            <p>Ven por tu bebida de cumpleaños</p>
+          </article>
+
+          <article class="reward-card">
+            <div class="reward-icon">✨</div>
+            <p>Disfruta antes que nadie de lanzamientos exclusivos</p>
+          </article>
         </section>
 
         <section class="benefits">
-          <p>Tus cafés se convierten en estrellas</p>
-          <div>
-            <img src="..." alt="" width="100">
-            <p>Lorem, ipsum dolor.</p>
+          <h2>Tus cafés se convierten en estrellas y recompensas increíbles</h2>
+
+          <div class="benefit-list">
+            <article class="benefit-item">
+              <div class="benefit-side">
+                <span class="big-star">★</span>
+                <span class="equal">=</span>
+                <span class="benefit-badge">💳</span>
+              </div>
+              <p>Obtén una estrella por cada $10 pagando con tu tarjeta Coffee Rewards.</p>
+            </article>
+
+            <article class="benefit-item">
+              <div class="benefit-side">
+                <span class="big-star">★</span>
+                <span class="equal">=</span>
+                <span class="benefit-badge">🧾</span>
+              </div>
+              <p>O acumula una estrella por cada $20 comprando en caja y registrando tu ticket.</p>
+            </article>
           </div>
         </section>
-      </div>
+      </section>
     </main>
   </body>
 </html>
